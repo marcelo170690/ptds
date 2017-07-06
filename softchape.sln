@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "softchape", "softchape.csproj", "{9BCB377D-6FD2-40CE-8A8D-4E8ED88562BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BCB377D-6FD2-40CE-8A8D-4E8ED88562BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCB377D-6FD2-40CE-8A8D-4E8ED88562BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCB377D-6FD2-40CE-8A8D-4E8ED88562BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCB377D-6FD2-40CE-8A8D-4E8ED88562BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
