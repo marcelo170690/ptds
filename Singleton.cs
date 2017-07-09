@@ -5,7 +5,7 @@ namespace softchape
     public class Singleton
     {
         private static Singleton instance = null;
-        private static int lvl { get; set; }
+        public int lvl { get; set; }
 
         private Singleton() { }
 
