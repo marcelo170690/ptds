@@ -26,7 +26,7 @@ namespace softchape
         {
             if (!isWrong())
             {
-                var user = Singleton.getInstace();
+                var user = Singleton.getInstance();
                     
                 if (isAdmin())
                 {
@@ -37,7 +37,10 @@ namespace softchape
                     user.lvl = (int)UserLevel.USER;
                 }
 
-                this.Close();
+                Main main = new Main();
+                main.Show();
+
+                this.Hide();
             }
             else
             {

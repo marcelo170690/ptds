@@ -9,7 +9,7 @@ namespace softchape
 
         private Singleton() { }
 
-        public static Singleton getInstace()
+        public static Singleton getInstance()
         {
             if (instance == null)
             {
