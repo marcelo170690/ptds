@@ -19,18 +19,23 @@ namespace softchape
 
         private void Main_Shown(object sender, EventArgs e)
         {
-            var user = Singleton.getInstance();
 
-            var userText = (user.lvl == (int)UserLevel.ADMIN) ?
-                "Administrador" : "Usuario";
-
-            label1.Text = "Nivel de usuario: " + userText;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login login = new softchape.Login();
-            login.Show();
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void editClienteButton_Click(object sender, EventArgs e)
+        {
+            var registro = new Registro();
+            registro.Show();
 
             this.Close();
         }
