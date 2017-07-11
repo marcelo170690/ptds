@@ -40,21 +40,23 @@
             this.ciTextBox = new System.Windows.Forms.TextBox();
             this.telfTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.plateTextBox = new System.Windows.Forms.TextBox();
-            this.modelTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.yearTextBox = new System.Windows.Forms.TextBox();
             this.brandTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.plateTextBox = new System.Windows.Forms.TextBox();
+            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.colorTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // okButton
             // 
             this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.okButton.Location = new System.Drawing.Point(12, 474);
+            this.okButton.Location = new System.Drawing.Point(12, 504);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(150, 30);
             this.okButton.TabIndex = 0;
@@ -65,7 +67,7 @@
             // cancelButton
             // 
             this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelButton.Location = new System.Drawing.Point(302, 474);
+            this.cancelButton.Location = new System.Drawing.Point(302, 504);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(150, 30);
             this.cancelButton.TabIndex = 1;
@@ -158,6 +160,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.colorTextBox);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.yearTextBox);
             this.groupBox1.Controls.Add(this.brandTextBox);
             this.groupBox1.Controls.Add(this.label8);
@@ -169,51 +173,15 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 273);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(440, 175);
+            this.groupBox1.Size = new System.Drawing.Size(440, 195);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MOVILIDAD";
             // 
-            // plateTextBox
-            // 
-            this.plateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plateTextBox.Location = new System.Drawing.Point(230, 57);
-            this.plateTextBox.Name = "plateTextBox";
-            this.plateTextBox.Size = new System.Drawing.Size(204, 26);
-            this.plateTextBox.TabIndex = 14;
-            // 
-            // modelTextBox
-            // 
-            this.modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modelTextBox.Location = new System.Drawing.Point(10, 57);
-            this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.Size = new System.Drawing.Size(200, 26);
-            this.modelTextBox.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(227, 34);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "PLACA";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 34);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "MODELO";
-            // 
             // yearTextBox
             // 
             this.yearTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearTextBox.Location = new System.Drawing.Point(230, 122);
+            this.yearTextBox.Location = new System.Drawing.Point(230, 155);
             this.yearTextBox.Name = "yearTextBox";
             this.yearTextBox.Size = new System.Drawing.Size(204, 26);
             this.yearTextBox.TabIndex = 18;
@@ -221,7 +189,7 @@
             // brandTextBox
             // 
             this.brandTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandTextBox.Location = new System.Drawing.Point(10, 122);
+            this.brandTextBox.Location = new System.Drawing.Point(6, 126);
             this.brandTextBox.Name = "brandTextBox";
             this.brandTextBox.Size = new System.Drawing.Size(200, 26);
             this.brandTextBox.TabIndex = 17;
@@ -230,7 +198,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(227, 99);
+            this.label8.Location = new System.Drawing.Point(227, 132);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 20);
             this.label8.TabIndex = 16;
@@ -240,17 +208,72 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 99);
+            this.label9.Location = new System.Drawing.Point(2, 103);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "MARCA";
             // 
+            // plateTextBox
+            // 
+            this.plateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plateTextBox.Location = new System.Drawing.Point(230, 97);
+            this.plateTextBox.Name = "plateTextBox";
+            this.plateTextBox.Size = new System.Drawing.Size(204, 26);
+            this.plateTextBox.TabIndex = 14;
+            // 
+            // modelTextBox
+            // 
+            this.modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modelTextBox.Location = new System.Drawing.Point(10, 68);
+            this.modelTextBox.Name = "modelTextBox";
+            this.modelTextBox.Size = new System.Drawing.Size(200, 26);
+            this.modelTextBox.TabIndex = 13;
+            this.modelTextBox.TextChanged += new System.EventHandler(this.modelTextBox_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(227, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "PLACA";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 20);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "MODELO";
+            // 
+            // colorTextBox
+            // 
+            this.colorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorTextBox.Location = new System.Drawing.Point(230, 36);
+            this.colorTextBox.Name = "colorTextBox";
+            this.colorTextBox.Size = new System.Drawing.Size(204, 26);
+            this.colorTextBox.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(227, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 20);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "COLOR";
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 601);
+            this.ClientSize = new System.Drawing.Size(464, 538);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.telfTextBox);
             this.Controls.Add(this.ciTextBox);
@@ -295,5 +318,7 @@
         private System.Windows.Forms.TextBox modelTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox colorTextBox;
+        private System.Windows.Forms.Label label10;
     }
 }
