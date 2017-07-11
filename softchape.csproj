@@ -156,8 +156,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\aceite.png" />
     <Content Include="assets\addUser.png" />
+    <Content Include="assets\alerta.png" />
+    <Content Include="assets\bug.png" />
+    <Content Include="assets\GESTIONAR.png" />
+    <Content Include="assets\icidagnostico.png" />
+    <Content Include="assets\informes.png" />
+    <Content Include="assets\login.png" />
+    <Content Include="assets\mecanico.png" />
     <Content Include="assets\user.png" />
+    <Content Include="assets\userlogin.png" />
     <Content Include="bdchapaco.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
