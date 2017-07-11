@@ -39,5 +39,17 @@ namespace softchape
 
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var diagnostico = new Diagnostico();
+            diagnostico.Show();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            var editar = new Editar();
+            editar.Show();
+        }
     }
 }

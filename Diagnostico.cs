@@ -19,13 +19,55 @@ namespace softchape
 
         private void addMovilButton_Click(object sender, EventArgs e)
         {
-            /*
+            
+            
+        }
+
+        private void clienteTextBox_Validating(object sender, CancelEventArgs e)
+        {
             var clienteAdpater = new bdchapacoDataSetTableAdapters.clienteTableAdapter();
-            var cod = clienteAdpater.getCodCliente(clienteTextBox.Text);
             var autoAdapter = new bdchapacoDataSetTableAdapters.autoTableAdapter();
 
+            var cod = clienteAdpater.getCodCliente(clienteTextBox.Text);
 
-            movilComboBox.DataSource = autoAdapter.GetDataByPlaca(cod);*/
+            if (cod != null)
+            {
+                movilComboBox.DataSource = autoAdapter.GetDataByPlaca(cod);
+                movilComboBox.DisplayMember = "placa";
+            }
+            else
+            {
+                movilComboBox.DataSource = null;
+                movilComboBox.Text = String.Empty;
+            }
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            var diagnostico = new bdchapacoDataSetTableAdapters.diagnosticoTableAdapter();
+
+            diagnostico.Insert(detailTextBox.Text, DateTime.Now, movilComboBox.Text);
+
+            DialogResult dialog = MessageBox.Show("Desea realizar la reparación?", "Aviso", MessageBoxButtons.YesNo);
+
+            if (dialog == DialogResult.Yes)
+            {
+
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void Diagnostico_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

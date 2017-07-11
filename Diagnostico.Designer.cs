@@ -35,8 +35,8 @@
             this.movilComboBox = new System.Windows.Forms.ComboBox();
             this.addMovilButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.detailTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -69,6 +69,7 @@
             this.clienteTextBox.Name = "clienteTextBox";
             this.clienteTextBox.Size = new System.Drawing.Size(242, 26);
             this.clienteTextBox.TabIndex = 2;
+            this.clienteTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.clienteTextBox_Validating);
             // 
             // label3
             // 
@@ -110,16 +111,6 @@
             this.panel1.Size = new System.Drawing.Size(494, 177);
             this.panel1.TabIndex = 6;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "DETALLE";
-            // 
             // detailTextBox
             // 
             this.detailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +121,16 @@
             this.detailTextBox.Size = new System.Drawing.Size(464, 129);
             this.detailTextBox.TabIndex = 8;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "DETALLE";
+            // 
             // okButton
             // 
             this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,6 +140,7 @@
             this.okButton.TabIndex = 7;
             this.okButton.Text = "ACEPTAR";
             this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // cancelButton
             // 
@@ -149,6 +151,7 @@
             this.cancelButton.TabIndex = 8;
             this.cancelButton.Text = "CANCELAR";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // Diagnostico
             // 
@@ -166,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Diagnostico";
             this.Text = "Diagnostico";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Diagnostico_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
