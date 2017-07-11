@@ -53,10 +53,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dstablas.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dstablas.xsd</DependentUpon>
+    <Compile Include="Diagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostico.Designer.cs">
+      <DependentUpon>Diagnostico.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,6 +94,9 @@
     </Compile>
     <Compile Include="Singleton.cs" />
     <Compile Include="UserLevel.cs" />
+    <EmbeddedResource Include="Diagnostico.resx">
+      <DependentUpon>Diagnostico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,17 +132,6 @@
     </None>
     <None Include="bdchapacoDataSet.xss">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dstablas.xsc">
-      <DependentUpon>dstablas.xsd</DependentUpon>
-    </None>
-    <None Include="dstablas.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dstablas.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="dstablas.xss">
-      <DependentUpon>dstablas.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -14,7 +14,6 @@ namespace softchape{
         public Form1(){
             InitializeComponent();
         }
-        dstablas ds = new dstablas();
         
         private void Form1_Load(object sender, EventArgs e){
             
