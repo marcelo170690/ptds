@@ -55,23 +55,20 @@
             this.cmbmecanico = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btlcancelar = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnguardar = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbreparacion = new System.Windows.Forms.ComboBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmaterial)).BeginInit();
@@ -82,20 +79,20 @@
             this.groupBox2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.lbltotal);
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(11, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(724, 372);
+            this.groupBox1.Size = new System.Drawing.Size(729, 322);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DETALLE REPARACION";
@@ -105,7 +102,7 @@
             this.groupBox6.Controls.Add(this.lbltotalmaterial);
             this.groupBox6.Controls.Add(this.label14);
             this.groupBox6.Controls.Add(this.dgvmaterial);
-            this.groupBox6.Location = new System.Drawing.Point(327, 126);
+            this.groupBox6.Location = new System.Drawing.Point(334, 113);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(383, 184);
             this.groupBox6.TabIndex = 5;
@@ -184,7 +181,7 @@
             this.groupBox5.Controls.Add(this.button1);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Location = new System.Drawing.Point(327, 31);
+            this.groupBox5.Location = new System.Drawing.Point(334, 18);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(383, 89);
             this.groupBox5.TabIndex = 4;
@@ -267,7 +264,7 @@
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotal.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbltotal.Location = new System.Drawing.Point(377, 338);
+            this.lbltotal.Location = new System.Drawing.Point(95, 22);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(57, 18);
             this.lbltotal.TabIndex = 7;
@@ -279,7 +276,7 @@
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(6, 221);
+            this.groupBox4.Location = new System.Drawing.Point(13, 208);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(315, 89);
             this.groupBox4.TabIndex = 6;
@@ -326,7 +323,7 @@
             this.groupBox3.Controls.Add(this.cmbmecanico);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(6, 126);
+            this.groupBox3.Location = new System.Drawing.Point(13, 113);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(315, 89);
             this.groupBox3.TabIndex = 4;
@@ -372,24 +369,13 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "MECANICO:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Location = new System.Drawing.Point(305, 338);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 18);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "TOTAL:";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 31);
+            this.groupBox2.Location = new System.Drawing.Point(13, 18);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(315, 89);
             this.groupBox2.TabIndex = 1;
@@ -436,22 +422,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CLIENTE:";
             // 
-            // btlcancelar
-            // 
-            this.btlcancelar.Location = new System.Drawing.Point(110, 16);
-            this.btlcancelar.Name = "btlcancelar";
-            this.btlcancelar.Size = new System.Drawing.Size(75, 23);
-            this.btlcancelar.TabIndex = 1;
-            this.btlcancelar.Text = "CANCELAR";
-            this.btlcancelar.UseVisualStyleBackColor = true;
-            // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.button3);
             this.groupBox7.Controls.Add(this.btnguardar);
-            this.groupBox7.Controls.Add(this.btlcancelar);
-            this.groupBox7.Location = new System.Drawing.Point(545, 464);
+            this.groupBox7.Location = new System.Drawing.Point(758, 319);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(191, 54);
+            this.groupBox7.Size = new System.Drawing.Size(264, 77);
             this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             // 
@@ -459,78 +436,21 @@
             // 
             this.btnguardar.Location = new System.Drawing.Point(16, 16);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(75, 23);
+            this.btnguardar.Size = new System.Drawing.Size(101, 44);
             this.btnguardar.TabIndex = 2;
             this.btnguardar.Text = "REALIZAR";
             this.btnguardar.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.label15);
-            this.groupBox8.Controls.Add(this.label11);
-            this.groupBox8.Controls.Add(this.listBox1);
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Controls.Add(this.cmbreparacion);
             this.groupBox8.Location = new System.Drawing.Point(11, 12);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(725, 68);
+            this.groupBox8.Size = new System.Drawing.Size(321, 68);
             this.groupBox8.TabIndex = 9;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "TIPO DE REPARACION O SERVICIO";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(416, 39);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 16);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "label17";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(416, 18);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 16);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "label16";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(319, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 16);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "TIPO:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(319, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "COSTO:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(287, 9);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(435, 56);
-            this.listBox1.TabIndex = 6;
             // 
             // label10
             // 
@@ -544,7 +464,7 @@
             // 
             // cmbreparacion
             // 
-            this.cmbreparacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbreparacion.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbreparacion.FormattingEnabled = true;
             this.cmbreparacion.Items.AddRange(new object[] {
             "SISTEMA DE TRANSMISION",
@@ -553,14 +473,53 @@
             "MOTORES GASOLINA"});
             this.cmbreparacion.Location = new System.Drawing.Point(25, 32);
             this.cmbreparacion.Name = "cmbreparacion";
-            this.cmbreparacion.Size = new System.Drawing.Size(177, 21);
+            this.cmbreparacion.Size = new System.Drawing.Size(275, 24);
             this.cmbreparacion.TabIndex = 5;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.lbltotal);
+            this.groupBox9.Location = new System.Drawing.Point(338, 12);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(402, 68);
+            this.groupBox9.TabIndex = 8;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "TOTAL";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.textBox3);
+            this.groupBox10.Location = new System.Drawing.Point(758, 107);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(264, 206);
+            this.groupBox10.TabIndex = 3;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "DESCRIPCION";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(15, 19);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(238, 175);
+            this.textBox3.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(152, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 44);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "REALIZAR";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // frmreparacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 525);
+            this.ClientSize = new System.Drawing.Size(1047, 525);
+            this.Controls.Add(this.groupBox9);
+            this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox1);
@@ -569,7 +528,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmreparacion_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmaterial)).EndInit();
@@ -585,6 +543,10 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,7 +577,6 @@
         private System.Windows.Forms.ComboBox cmbmecanico;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -623,17 +584,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbltotalmaterial;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button btlcancelar;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.NumericUpDown txtcant;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbreparacion;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button3;
     }
 }
