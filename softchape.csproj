@@ -36,8 +36,11 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +63,11 @@
     <Compile Include="Diagnostico.Designer.cs">
       <DependentUpon>Diagnostico.cs</DependentUpon>
     </Compile>
+    <Compile Include="ds_informes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_informes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Editar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +79,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlimpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlimpieza.Designer.cs">
+      <DependentUpon>frmlimpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReciboReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReciboReparacion.Designer.cs">
+      <DependentUpon>frmReciboReparacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmreparacion.cs">
       <SubType>Form</SubType>
@@ -111,9 +131,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmlimpieza.resx">
+      <DependentUpon>frmlimpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReciboReparacion.resx">
+      <DependentUpon>frmReciboReparacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmreparacion.resx">
       <DependentUpon>frmreparacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfReparacion.rdlc" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +173,17 @@
     <None Include="bdchapacoDataSet.xss">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ds_informes.xsc">
+      <DependentUpon>ds_informes.xsd</DependentUpon>
+    </None>
+    <None Include="ds_informes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_informes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_informes.xss">
+      <DependentUpon>ds_informes.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

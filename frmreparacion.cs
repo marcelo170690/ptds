@@ -76,6 +76,9 @@ namespace softchape{
             return false;
         }
         #endregion
+        #region formularios
+        frmReciboReparacion finf;
+        #endregion
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e){
             
         }
@@ -129,6 +132,20 @@ namespace softchape{
                         det.Insert(max, Convert.ToInt32(dgvmaterial.Rows[i].Cells[0].Value.ToString()), Convert.ToInt32(dgvmaterial.Rows[i].Cells[3].Value.ToString()));
                     }
                     limpiar();
+                    if (MessageBox.Show("Desea imprimir el recibo?", "titulo aqui", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                        finf = new frmReciboReparacion();
+                        finf.vplaca = vplaca;
+                        finf.vcodrep = max;
+                        try
+                        {
+                            finf.ShowDialog();
+                        }
+                        catch (Exception vv)
+                        {
+                            MessageBox.Show(vv.ToString());
+                        }
+                        
+                    }
                     if (MessageBox.Show("Desea realizar otro registro de reparacion?", "titulo aqui", MessageBoxButtons.YesNo) == DialogResult.No)
                         Close();
                 }catch (Exception mm){

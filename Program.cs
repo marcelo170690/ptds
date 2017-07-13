@@ -16,7 +16,7 @@ namespace softchape
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmreparacion());
+            Application.Run(new Login());
         }
     }
 }
