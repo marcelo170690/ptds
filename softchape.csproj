@@ -53,10 +53,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dstablas.cs">
+      <DependentUpon>dstablas.xsd</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="dstablas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dstablas.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -131,14 +137,17 @@
     </None>
     <None Include="dstablas.xsc">
       <DependentUpon>dstablas.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="dstablas.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dstablas.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="dstablas.xss">
       <DependentUpon>dstablas.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
