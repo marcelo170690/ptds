@@ -94,7 +94,7 @@ WHERE        (codcliente = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getAño" Modifier="Public" Name="getAño" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getAño">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getAño" Modifier="Public" Name="getAño" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getAño">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        año
@@ -106,7 +106,7 @@ WHERE        (placa = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getColor" Modifier="Public" Name="getColor" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getColor">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getColor" Modifier="Public" Name="getColor" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getColor">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        color
@@ -118,7 +118,7 @@ WHERE        (placa = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getMarca" Modifier="Public" Name="getMarca" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getMarca">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getMarca" Modifier="Public" Name="getMarca" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getMarca">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        marca
@@ -130,7 +130,7 @@ WHERE        (placa = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getModelo" Modifier="Public" Name="getModelo" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getModelo">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getModelo" Modifier="Public" Name="getModelo" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getModelo">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        modelo
@@ -142,7 +142,7 @@ WHERE        (placa = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getPlaca" Modifier="Public" Name="getPlaca" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getPlaca">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="auto" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getPlaca" Modifier="Public" Name="getPlaca" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getPlaca">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        placa
@@ -239,7 +239,7 @@ WHERE        (placa = ?)</CommandText>
               <Mapping SourceColumn="carnet" DataSetColumn="carnet" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getApellidos" Modifier="Public" Name="getApellidos" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getApellidos">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getApellidos" Modifier="Public" Name="getApellidos" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getApellidos">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        apellidos
@@ -251,7 +251,7 @@ WHERE        (codcliente = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCarnet" Modifier="Public" Name="getCarnet" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="getCarnet">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCarnet" Modifier="Public" Name="getCarnet" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getCarnet">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        carnet
@@ -263,7 +263,7 @@ WHERE        (codcliente = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCelular" Modifier="Public" Name="getCelular" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getCelular">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCelular" Modifier="Public" Name="getCelular" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getCelular">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        celular
@@ -275,7 +275,7 @@ WHERE        (codcliente = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCodCliente" Modifier="Public" Name="getCodCliente" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getCodCliente">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCodCliente" Modifier="Public" Name="getCodCliente" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getCodCliente">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        codcliente
@@ -287,7 +287,7 @@ WHERE        (carnet = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getNombre" Modifier="Public" Name="getNombre" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getNombre">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="cliente" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getNombre" Modifier="Public" Name="getNombre" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getNombre">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        nombre
@@ -299,7 +299,7 @@ WHERE        (codcliente = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertCliente" Modifier="Public" Name="InsertCliente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertCliente">
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertCliente" Modifier="Public" Name="InsertCliente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="InsertCliente">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `cliente` (`nombre`, `apellidos`, `celular`) VALUES (?, ?, ?)</CommandText>
@@ -471,162 +471,28 @@ WHERE        (codcliente = ?)</CommandText>
               <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
               <Mapping SourceColumn="costo" DataSetColumn="costo" />
             </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mecanicoTableAdapter" GeneratorDataComponentClassName="mecanicoTableAdapter" Name="mecanico" UserDataComponentName="mecanicoTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="mecanico" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `mecanico` WHERE ((`codmec` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `apellidos` IS NULL) OR (`apellidos` = ?)) AND ((? = 1 AND `sueldo` IS NULL) OR (`sueldo` = ?)) AND ((? = 1 AND `tipo` IS NULL) OR (`tipo` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_apellidos" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_sueldo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_sueldo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_tipo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_tipo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `mecanico` (`nombre`, `apellidos`, `sueldo`, `tipo`) VALUES (?, ?, ?, ?)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sueldo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="tipo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
+            <Sources>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="material" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="f_cantidad" Modifier="Public" Name="f_cantidad" QueryType="Scalar" ScalarCallRetval="System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="f_cantidad">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT codmec, nombre, apellidos, sueldo, tipo FROM mecanico</CommandText>
-                    <Parameters />
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT cantidad FROM material where codmat=?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="codmat" DataSourceName="material" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="codmat" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
                   </DbCommand>
                 </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `mecanico` SET `nombre` = ?, `apellidos` = ?, `sueldo` = ?, `tipo` = ? WHERE ((`codmec` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `apellidos` IS NULL) OR (`apellidos` = ?)) AND ((? = 1 AND `sueldo` IS NULL) OR (`sueldo` = ?)) AND ((? = 1 AND `tipo` IS NULL) OR (`tipo` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="sueldo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="tipo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_apellidos" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_sueldo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_sueldo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="sueldo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_tipo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_tipo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
               </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="codmec" DataSetColumn="codmec" />
-              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
-              <Mapping SourceColumn="apellidos" DataSetColumn="apellidos" />
-              <Mapping SourceColumn="sueldo" DataSetColumn="sueldo" />
-              <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="reparacionTableAdapter" GeneratorDataComponentClassName="reparacionTableAdapter" Name="reparacion" UserDataComponentName="reparacionTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="reparacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `reparacion` WHERE ((`codrep` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `costo` IS NULL) OR (`costo` = ?)) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `coddiag` IS NULL) OR (`coddiag` = ?)) AND ((? = 1 AND `codmec` IS NULL) OR (`codmec` = ?)) AND ((? = 1 AND `codayu` IS NULL) OR (`codayu` = ?)) AND ((? = 1 AND `descuento` IS NULL) OR (`descuento` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codrep" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codrep" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_costo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fecha" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_descuento" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_descuento" Precision="18" ProviderType="Numeric" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `reparacion` (`nombre`, `costo`, `fecha`, `coddiag`, `codmec`, `codayu`, `descuento`) VALUES (?, ?, ?, ?, ?, ?, ?)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="descuento" Precision="18" ProviderType="Numeric" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="material" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="f_costo" Modifier="Public" Name="f_costo" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="f_costo">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT codrep, nombre, costo, fecha, coddiag, codmec, codayu, descuento FROM reparacion</CommandText>
-                    <Parameters />
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT costo FROM material where codmat=?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="codmat" DataSourceName="material" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="codmat" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
                   </DbCommand>
                 </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `reparacion` SET `nombre` = ?, `costo` = ?, `fecha` = ?, `coddiag` = ?, `codmec` = ?, `codayu` = ?, `descuento` = ? WHERE ((`codrep` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `costo` IS NULL) OR (`costo` = ?)) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `coddiag` IS NULL) OR (`coddiag` = ?)) AND ((? = 1 AND `codmec` IS NULL) OR (`codmec` = ?)) AND ((? = 1 AND `codayu` IS NULL) OR (`codayu` = ?)) AND ((? = 1 AND `descuento` IS NULL) OR (`descuento` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="descuento" Precision="18" ProviderType="Numeric" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codrep" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codrep" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_costo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fecha" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_descuento" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_descuento" Precision="18" ProviderType="Numeric" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
               </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="codrep" DataSetColumn="codrep" />
-              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
-              <Mapping SourceColumn="costo" DataSetColumn="costo" />
-              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
-              <Mapping SourceColumn="coddiag" DataSetColumn="coddiag" />
-              <Mapping SourceColumn="codmec" DataSetColumn="codmec" />
-              <Mapping SourceColumn="codayu" DataSetColumn="codayu" />
-              <Mapping SourceColumn="descuento" DataSetColumn="descuento" />
-            </Mappings>
-            <Sources />
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ayudanteTableAdapter" GeneratorDataComponentClassName="ayudanteTableAdapter" Name="ayudante" UserDataComponentName="ayudanteTableAdapter">
             <MainSource>
@@ -681,6 +547,159 @@ WHERE        (codcliente = ?)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="reparacionTableAdapter" GeneratorDataComponentClassName="reparacionTableAdapter" Name="reparacion" UserDataComponentName="reparacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="reparacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `reparacion` WHERE ((`codrep` = ?) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `coddiag` IS NULL) OR (`coddiag` = ?)) AND ((? = 1 AND `codmec` IS NULL) OR (`codmec` = ?)) AND ((? = 1 AND `codayu` IS NULL) OR (`codayu` = ?)) AND ((? = 1 AND `descuento` IS NULL) OR (`descuento` = ?)) AND ((? = 1 AND `costo` IS NULL) OR (`costo` = ?)) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codrep" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codrep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fecha" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_descuento" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_descuento" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_costo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `reparacion` (`fecha`, `coddiag`, `codmec`, `codayu`, `descuento`, `costo`, `descripcion`, `nombre`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="descuento" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="descripcion" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="descripcion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT codrep, fecha, coddiag, codmec, codayu, descuento, costo, descripcion, nombre FROM reparacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `reparacion` SET `fecha` = ?, `coddiag` = ?, `codmec` = ?, `codayu` = ?, `descuento` = ?, `costo` = ?, `descripcion` = ?, `nombre` = ? WHERE ((`codrep` = ?) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `coddiag` IS NULL) OR (`coddiag` = ?)) AND ((? = 1 AND `codmec` IS NULL) OR (`codmec` = ?)) AND ((? = 1 AND `codayu` IS NULL) OR (`codayu` = ?)) AND ((? = 1 AND `descuento` IS NULL) OR (`descuento` = ?)) AND ((? = 1 AND `costo` IS NULL) OR (`costo` = ?)) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="descuento" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="descripcion" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="descripcion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codrep" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codrep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fecha" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_fecha" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_coddiag" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="coddiag" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codayu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codayu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_descuento" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_descuento" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="descuento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_costo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_costo" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="costo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codrep" DataSetColumn="codrep" />
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+              <Mapping SourceColumn="coddiag" DataSetColumn="coddiag" />
+              <Mapping SourceColumn="codmec" DataSetColumn="codmec" />
+              <Mapping SourceColumn="codayu" DataSetColumn="codayu" />
+              <Mapping SourceColumn="descuento" DataSetColumn="descuento" />
+              <Mapping SourceColumn="costo" DataSetColumn="costo" />
+              <Mapping SourceColumn="descripcion" DataSetColumn="descripcion" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="f_maxcodrep" Modifier="Public" Name="f_maxcodrep" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="f_maxcodrep">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT max(codrep) FROM reparacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mecanicoTableAdapter" GeneratorDataComponentClassName="mecanicoTableAdapter" Name="mecanico" UserDataComponentName="mecanicoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="mecanico" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `mecanico` WHERE ((`codmec` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `apellidos` IS NULL) OR (`apellidos` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_apellidos" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `mecanico` (`nombre`, `apellidos`) VALUES (?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT codmec, nombre, apellidos FROM mecanico</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `mecanico` SET `nombre` = ?, `apellidos` = ? WHERE ((`codmec` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `apellidos` IS NULL) OR (`apellidos` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codmec" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="codmec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nombre" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_apellidos" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_apellidos" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="apellidos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codmec" DataSetColumn="codmec" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="apellidos" DataSetColumn="apellidos" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -689,7 +708,7 @@ WHERE        (codcliente = ?)</CommandText>
   <xs:element name="bdchapacoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bdchapacoDataSet" msprop:Generator_UserDSName="bdchapacoDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="auto" msprop:Generator_TableClassName="autoDataTable" msprop:Generator_TableVarName="tableauto" msprop:Generator_RowChangedName="autoRowChanged" msprop:Generator_TablePropName="auto" msprop:Generator_RowDeletingName="autoRowDeleting" msprop:Generator_RowChangingName="autoRowChanging" msprop:Generator_RowEvHandlerName="autoRowChangeEventHandler" msprop:Generator_RowDeletedName="autoRowDeleted" msprop:Generator_RowClassName="autoRow" msprop:Generator_UserTableName="auto" msprop:Generator_RowEvArgName="autoRowChangeEvent">
+        <xs:element name="auto" msprop:Generator_TableClassName="autoDataTable" msprop:Generator_TableVarName="tableauto" msprop:Generator_TablePropName="auto" msprop:Generator_RowDeletingName="autoRowDeleting" msprop:Generator_RowChangingName="autoRowChanging" msprop:Generator_RowEvHandlerName="autoRowChangeEventHandler" msprop:Generator_RowDeletedName="autoRowDeleted" msprop:Generator_UserTableName="auto" msprop:Generator_RowChangedName="autoRowChanged" msprop:Generator_RowEvArgName="autoRowChangeEvent" msprop:Generator_RowClassName="autoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="placa" msprop:Generator_ColumnVarNameInTable="columnplaca" msprop:Generator_ColumnPropNameInRow="placa" msprop:Generator_ColumnPropNameInTable="placaColumn" msprop:Generator_UserColumnName="placa">
@@ -731,7 +750,7 @@ WHERE        (codcliente = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="cliente" msprop:Generator_TableClassName="clienteDataTable" msprop:Generator_TableVarName="tablecliente" msprop:Generator_RowChangedName="clienteRowChanged" msprop:Generator_TablePropName="cliente" msprop:Generator_RowDeletingName="clienteRowDeleting" msprop:Generator_RowChangingName="clienteRowChanging" msprop:Generator_RowEvHandlerName="clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="clienteRowDeleted" msprop:Generator_RowClassName="clienteRow" msprop:Generator_UserTableName="cliente" msprop:Generator_RowEvArgName="clienteRowChangeEvent">
+        <xs:element name="cliente" msprop:Generator_TableClassName="clienteDataTable" msprop:Generator_TableVarName="tablecliente" msprop:Generator_TablePropName="cliente" msprop:Generator_RowDeletingName="clienteRowDeleting" msprop:Generator_RowChangingName="clienteRowChanging" msprop:Generator_RowEvHandlerName="clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="clienteRowDeleted" msprop:Generator_UserTableName="cliente" msprop:Generator_RowChangedName="clienteRowChanged" msprop:Generator_RowEvArgName="clienteRowChangeEvent" msprop:Generator_RowClassName="clienteRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codcliente" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodcliente" msprop:Generator_ColumnPropNameInRow="codcliente" msprop:Generator_ColumnPropNameInTable="codclienteColumn" msprop:Generator_UserColumnName="codcliente" type="xs:int" />
@@ -766,7 +785,7 @@ WHERE        (codcliente = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle" msprop:Generator_TableClassName="detalleDataTable" msprop:Generator_TableVarName="tabledetalle" msprop:Generator_RowChangedName="detalleRowChanged" msprop:Generator_TablePropName="detalle" msprop:Generator_RowDeletingName="detalleRowDeleting" msprop:Generator_RowChangingName="detalleRowChanging" msprop:Generator_RowEvHandlerName="detalleRowChangeEventHandler" msprop:Generator_RowDeletedName="detalleRowDeleted" msprop:Generator_RowClassName="detalleRow" msprop:Generator_UserTableName="detalle" msprop:Generator_RowEvArgName="detalleRowChangeEvent">
+        <xs:element name="detalle" msprop:Generator_TableClassName="detalleDataTable" msprop:Generator_TableVarName="tabledetalle" msprop:Generator_TablePropName="detalle" msprop:Generator_RowDeletingName="detalleRowDeleting" msprop:Generator_RowChangingName="detalleRowChanging" msprop:Generator_RowEvHandlerName="detalleRowChangeEventHandler" msprop:Generator_RowDeletedName="detalleRowDeleted" msprop:Generator_UserTableName="detalle" msprop:Generator_RowChangedName="detalleRowChanged" msprop:Generator_RowEvArgName="detalleRowChangeEvent" msprop:Generator_RowClassName="detalleRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codrep" msprop:Generator_ColumnVarNameInTable="columncodrep" msprop:Generator_ColumnPropNameInRow="codrep" msprop:Generator_ColumnPropNameInTable="codrepColumn" msprop:Generator_UserColumnName="codrep" type="xs:int" minOccurs="0" />
@@ -775,7 +794,7 @@ WHERE        (codcliente = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="diagnostico" msprop:Generator_TableClassName="diagnosticoDataTable" msprop:Generator_TableVarName="tablediagnostico" msprop:Generator_RowChangedName="diagnosticoRowChanged" msprop:Generator_TablePropName="diagnostico" msprop:Generator_RowDeletingName="diagnosticoRowDeleting" msprop:Generator_RowChangingName="diagnosticoRowChanging" msprop:Generator_RowEvHandlerName="diagnosticoRowChangeEventHandler" msprop:Generator_RowDeletedName="diagnosticoRowDeleted" msprop:Generator_RowClassName="diagnosticoRow" msprop:Generator_UserTableName="diagnostico" msprop:Generator_RowEvArgName="diagnosticoRowChangeEvent">
+        <xs:element name="diagnostico" msprop:Generator_TableClassName="diagnosticoDataTable" msprop:Generator_TableVarName="tablediagnostico" msprop:Generator_TablePropName="diagnostico" msprop:Generator_RowDeletingName="diagnosticoRowDeleting" msprop:Generator_RowChangingName="diagnosticoRowChanging" msprop:Generator_RowEvHandlerName="diagnosticoRowChangeEventHandler" msprop:Generator_RowDeletedName="diagnosticoRowDeleted" msprop:Generator_UserTableName="diagnostico" msprop:Generator_RowChangedName="diagnosticoRowChanged" msprop:Generator_RowEvArgName="diagnosticoRowChangeEvent" msprop:Generator_RowClassName="diagnosticoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="coddiag" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncoddiag" msprop:Generator_ColumnPropNameInRow="coddiag" msprop:Generator_ColumnPropNameInTable="coddiagColumn" msprop:Generator_UserColumnName="coddiag" type="xs:int" />
@@ -797,7 +816,7 @@ WHERE        (codcliente = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="material" msprop:Generator_TableClassName="materialDataTable" msprop:Generator_TableVarName="tablematerial" msprop:Generator_RowChangedName="materialRowChanged" msprop:Generator_TablePropName="material" msprop:Generator_RowDeletingName="materialRowDeleting" msprop:Generator_RowChangingName="materialRowChanging" msprop:Generator_RowEvHandlerName="materialRowChangeEventHandler" msprop:Generator_RowDeletedName="materialRowDeleted" msprop:Generator_RowClassName="materialRow" msprop:Generator_UserTableName="material" msprop:Generator_RowEvArgName="materialRowChangeEvent">
+        <xs:element name="material" msprop:Generator_TableClassName="materialDataTable" msprop:Generator_TableVarName="tablematerial" msprop:Generator_TablePropName="material" msprop:Generator_RowDeletingName="materialRowDeleting" msprop:Generator_RowChangingName="materialRowChanging" msprop:Generator_RowEvHandlerName="materialRowChangeEventHandler" msprop:Generator_RowDeletedName="materialRowDeleted" msprop:Generator_UserTableName="material" msprop:Generator_RowChangedName="materialRowChanged" msprop:Generator_RowEvArgName="materialRowChangeEvent" msprop:Generator_RowClassName="materialRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codmat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodmat" msprop:Generator_ColumnPropNameInRow="codmat" msprop:Generator_ColumnPropNameInTable="codmatColumn" msprop:Generator_UserColumnName="codmat" type="xs:int" />
@@ -813,10 +832,10 @@ WHERE        (codcliente = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mecanico" msprop:Generator_TableClassName="mecanicoDataTable" msprop:Generator_TableVarName="tablemecanico" msprop:Generator_RowChangedName="mecanicoRowChanged" msprop:Generator_TablePropName="mecanico" msprop:Generator_RowDeletingName="mecanicoRowDeleting" msprop:Generator_RowChangingName="mecanicoRowChanging" msprop:Generator_RowEvHandlerName="mecanicoRowChangeEventHandler" msprop:Generator_RowDeletedName="mecanicoRowDeleted" msprop:Generator_RowClassName="mecanicoRow" msprop:Generator_UserTableName="mecanico" msprop:Generator_RowEvArgName="mecanicoRowChangeEvent">
+        <xs:element name="ayudante" msprop:Generator_TableClassName="ayudanteDataTable" msprop:Generator_TableVarName="tableayudante" msprop:Generator_RowChangedName="ayudanteRowChanged" msprop:Generator_TablePropName="ayudante" msprop:Generator_RowDeletingName="ayudanteRowDeleting" msprop:Generator_RowChangingName="ayudanteRowChanging" msprop:Generator_RowEvHandlerName="ayudanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ayudanteRowDeleted" msprop:Generator_RowClassName="ayudanteRow" msprop:Generator_UserTableName="ayudante" msprop:Generator_RowEvArgName="ayudanteRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="codmec" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodmec" msprop:Generator_ColumnPropNameInRow="codmec" msprop:Generator_ColumnPropNameInTable="codmecColumn" msprop:Generator_UserColumnName="codmec" type="xs:int" />
+              <xs:element name="codayu" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodayu" msprop:Generator_ColumnPropNameInRow="codayu" msprop:Generator_ColumnPropNameInTable="codayuColumn" msprop:Generator_UserColumnName="codayu" type="xs:int" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -831,27 +850,26 @@ WHERE        (codcliente = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="sueldo" msprop:Generator_ColumnVarNameInTable="columnsueldo" msprop:Generator_ColumnPropNameInRow="sueldo" msprop:Generator_ColumnPropNameInTable="sueldoColumn" msprop:Generator_UserColumnName="sueldo" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="reparacion" msprop:Generator_TableClassName="reparacionDataTable" msprop:Generator_TableVarName="tablereparacion" msprop:Generator_RowChangedName="reparacionRowChanged" msprop:Generator_TablePropName="reparacion" msprop:Generator_RowDeletingName="reparacionRowDeleting" msprop:Generator_RowChangingName="reparacionRowChanging" msprop:Generator_RowEvHandlerName="reparacionRowChangeEventHandler" msprop:Generator_RowDeletedName="reparacionRowDeleted" msprop:Generator_RowClassName="reparacionRow" msprop:Generator_UserTableName="reparacion" msprop:Generator_RowEvArgName="reparacionRowChangeEvent">
+        <xs:element name="reparacion" msprop:Generator_TableClassName="reparacionDataTable" msprop:Generator_TableVarName="tablereparacion" msprop:Generator_TablePropName="reparacion" msprop:Generator_RowDeletingName="reparacionRowDeleting" msprop:Generator_RowChangingName="reparacionRowChanging" msprop:Generator_RowEvHandlerName="reparacionRowChangeEventHandler" msprop:Generator_RowDeletedName="reparacionRowDeleted" msprop:Generator_UserTableName="reparacion" msprop:Generator_RowChangedName="reparacionRowChanged" msprop:Generator_RowEvArgName="reparacionRowChangeEvent" msprop:Generator_RowClassName="reparacionRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codrep" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodrep" msprop:Generator_ColumnPropNameInRow="codrep" msprop:Generator_ColumnPropNameInTable="codrepColumn" msprop:Generator_UserColumnName="codrep" type="xs:int" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="coddiag" msprop:Generator_ColumnVarNameInTable="columncoddiag" msprop:Generator_ColumnPropNameInRow="coddiag" msprop:Generator_ColumnPropNameInTable="coddiagColumn" msprop:Generator_UserColumnName="coddiag" type="xs:int" minOccurs="0" />
+              <xs:element name="codmec" msprop:Generator_ColumnVarNameInTable="columncodmec" msprop:Generator_ColumnPropNameInRow="codmec" msprop:Generator_ColumnPropNameInTable="codmecColumn" msprop:Generator_UserColumnName="codmec" type="xs:int" minOccurs="0" />
+              <xs:element name="codayu" msprop:Generator_ColumnVarNameInTable="columncodayu" msprop:Generator_ColumnPropNameInRow="codayu" msprop:Generator_ColumnPropNameInTable="codayuColumn" msprop:Generator_UserColumnName="codayu" type="xs:int" minOccurs="0" />
+              <xs:element name="descuento" msprop:Generator_ColumnVarNameInTable="columndescuento" msprop:Generator_ColumnPropNameInRow="descuento" msprop:Generator_ColumnPropNameInTable="descuentoColumn" msprop:Generator_UserColumnName="descuento" type="xs:double" minOccurs="0" />
+              <xs:element name="costo" msprop:Generator_ColumnVarNameInTable="columncosto" msprop:Generator_ColumnPropNameInRow="costo" msprop:Generator_ColumnPropNameInTable="costoColumn" msprop:Generator_UserColumnName="costo" type="xs:double" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -859,25 +877,13 @@ WHERE        (codcliente = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="costo" msprop:Generator_ColumnVarNameInTable="columncosto" msprop:Generator_ColumnPropNameInRow="costo" msprop:Generator_ColumnPropNameInTable="costoColumn" msprop:Generator_UserColumnName="costo" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="coddiag" msprop:Generator_ColumnVarNameInTable="columncoddiag" msprop:Generator_ColumnPropNameInRow="coddiag" msprop:Generator_ColumnPropNameInTable="coddiagColumn" msprop:Generator_UserColumnName="coddiag" type="xs:int" minOccurs="0" />
-              <xs:element name="codmec" msprop:Generator_ColumnVarNameInTable="columncodmec" msprop:Generator_ColumnPropNameInRow="codmec" msprop:Generator_ColumnPropNameInTable="codmecColumn" msprop:Generator_UserColumnName="codmec" type="xs:int" minOccurs="0" />
-              <xs:element name="codayu" msprop:Generator_ColumnVarNameInTable="columncodayu" msprop:Generator_ColumnPropNameInRow="codayu" msprop:Generator_ColumnPropNameInTable="codayuColumn" msprop:Generator_UserColumnName="codayu" type="xs:int" minOccurs="0" />
-              <xs:element name="descuento" msprop:Generator_ColumnVarNameInTable="columndescuento" msprop:Generator_ColumnPropNameInRow="descuento" msprop:Generator_ColumnPropNameInTable="descuentoColumn" msprop:Generator_UserColumnName="descuento" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ayudante" msprop:Generator_TableClassName="ayudanteDataTable" msprop:Generator_TableVarName="tableayudante" msprop:Generator_TablePropName="ayudante" msprop:Generator_RowDeletingName="ayudanteRowDeleting" msprop:Generator_RowChangingName="ayudanteRowChanging" msprop:Generator_RowEvHandlerName="ayudanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ayudanteRowDeleted" msprop:Generator_UserTableName="ayudante" msprop:Generator_RowChangedName="ayudanteRowChanged" msprop:Generator_RowEvArgName="ayudanteRowChangeEvent" msprop:Generator_RowClassName="ayudanteRow">
+        <xs:element name="mecanico" msprop:Generator_TableClassName="mecanicoDataTable" msprop:Generator_TableVarName="tablemecanico" msprop:Generator_TablePropName="mecanico" msprop:Generator_RowDeletingName="mecanicoRowDeleting" msprop:Generator_RowChangingName="mecanicoRowChanging" msprop:Generator_RowEvHandlerName="mecanicoRowChangeEventHandler" msprop:Generator_RowDeletedName="mecanicoRowDeleted" msprop:Generator_UserTableName="mecanico" msprop:Generator_RowChangedName="mecanicoRowChanged" msprop:Generator_RowEvArgName="mecanicoRowChangeEvent" msprop:Generator_RowClassName="mecanicoRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="codayu" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodayu" msprop:Generator_ColumnPropNameInRow="codayu" msprop:Generator_ColumnPropNameInTable="codayuColumn" msprop:Generator_UserColumnName="codayu" type="xs:int" />
+              <xs:element name="codmec" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodmec" msprop:Generator_ColumnPropNameInRow="codmec" msprop:Generator_ColumnPropNameInTable="codmecColumn" msprop:Generator_UserColumnName="codmec" type="xs:int" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -913,27 +919,27 @@ WHERE        (codcliente = ?)</CommandText>
       <xs:selector xpath=".//mstns:material" />
       <xs:field xpath="mstns:codmat" />
     </xs:unique>
-    <xs:unique name="mecanico_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:mecanico" />
-      <xs:field xpath="mstns:codmec" />
+    <xs:unique name="ayudante_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ayudante" />
+      <xs:field xpath="mstns:codayu" />
     </xs:unique>
     <xs:unique name="reparacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:reparacion" />
       <xs:field xpath="mstns:codrep" />
     </xs:unique>
-    <xs:unique name="ayudante_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:ayudante" />
-      <xs:field xpath="mstns:codayu" />
+    <xs:unique name="mecanico_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mecanico" />
+      <xs:field xpath="mstns:codmec" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="materialdetalle" msdata:parent="material" msdata:child="detalle" msdata:parentkey="codmat" msdata:childkey="codmat" msprop:Generator_UserChildTable="detalle" msprop:Generator_ChildPropName="GetdetalleRows" msprop:Generator_UserRelationName="materialdetalle" msprop:Generator_ParentPropName="materialRow" msprop:Generator_RelationVarName="relationmaterialdetalle" msprop:Generator_UserParentTable="material" />
-      <msdata:Relationship name="reparaciondetalle" msdata:parent="reparacion" msdata:child="detalle" msdata:parentkey="codrep" msdata:childkey="codrep" msprop:Generator_UserChildTable="detalle" msprop:Generator_ChildPropName="GetdetalleRows" msprop:Generator_UserRelationName="reparaciondetalle" msprop:Generator_ParentPropName="reparacionRow" msprop:Generator_RelationVarName="relationreparaciondetalle" msprop:Generator_UserParentTable="reparacion" />
-      <msdata:Relationship name="autodiagnostico" msdata:parent="auto" msdata:child="diagnostico" msdata:parentkey="placa" msdata:childkey="placa" msprop:Generator_UserChildTable="diagnostico" msprop:Generator_ChildPropName="GetdiagnosticoRows" msprop:Generator_UserRelationName="autodiagnostico" msprop:Generator_RelationVarName="relationautodiagnostico" msprop:Generator_UserParentTable="auto" msprop:Generator_ParentPropName="autoRow" />
-      <msdata:Relationship name="diagnosticoreparacion" msdata:parent="diagnostico" msdata:child="reparacion" msdata:parentkey="coddiag" msdata:childkey="coddiag" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="diagnosticoreparacion" msprop:Generator_RelationVarName="relationdiagnosticoreparacion" msprop:Generator_UserParentTable="diagnostico" msprop:Generator_ParentPropName="diagnosticoRow" />
+      <msdata:Relationship name="materialdetalle" msdata:parent="material" msdata:child="detalle" msdata:parentkey="codmat" msdata:childkey="codmat" msprop:Generator_UserChildTable="detalle" msprop:Generator_ChildPropName="GetdetalleRows" msprop:Generator_UserRelationName="materialdetalle" msprop:Generator_RelationVarName="relationmaterialdetalle" msprop:Generator_UserParentTable="material" msprop:Generator_ParentPropName="materialRow" />
+      <msdata:Relationship name="autodiagnostico" msdata:parent="auto" msdata:child="diagnostico" msdata:parentkey="placa" msdata:childkey="placa" msprop:Generator_UserChildTable="diagnostico" msprop:Generator_ChildPropName="GetdiagnosticoRows" msprop:Generator_UserRelationName="autodiagnostico" msprop:Generator_ParentPropName="autoRow" msprop:Generator_RelationVarName="relationautodiagnostico" msprop:Generator_UserParentTable="auto" />
+      <msdata:Relationship name="reparaciondetalle" msdata:parent="reparacion" msdata:child="detalle" msdata:parentkey="codrep" msdata:childkey="codrep" msprop:Generator_UserChildTable="detalle" msprop:Generator_ChildPropName="GetdetalleRows" msprop:Generator_UserRelationName="reparaciondetalle" msprop:Generator_RelationVarName="relationreparaciondetalle" msprop:Generator_UserParentTable="reparacion" msprop:Generator_ParentPropName="reparacionRow" />
+      <msdata:Relationship name="ayudantereparacion" msdata:parent="ayudante" msdata:child="reparacion" msdata:parentkey="codayu" msdata:childkey="codayu" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="ayudantereparacion" msprop:Generator_ParentPropName="ayudanteRow" msprop:Generator_RelationVarName="relationayudantereparacion" msprop:Generator_UserParentTable="ayudante" />
+      <msdata:Relationship name="diagnosticoreparacion" msdata:parent="diagnostico" msdata:child="reparacion" msdata:parentkey="coddiag" msdata:childkey="coddiag" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="diagnosticoreparacion" msprop:Generator_ParentPropName="diagnosticoRow" msprop:Generator_RelationVarName="relationdiagnosticoreparacion" msprop:Generator_UserParentTable="diagnostico" />
       <msdata:Relationship name="mecanicoreparacion" msdata:parent="mecanico" msdata:child="reparacion" msdata:parentkey="codmec" msdata:childkey="codmec" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="mecanicoreparacion" msprop:Generator_RelationVarName="relationmecanicoreparacion" msprop:Generator_UserParentTable="mecanico" msprop:Generator_ParentPropName="mecanicoRow" />
-      <msdata:Relationship name="ayudantereparacion" msdata:parent="ayudante" msdata:child="reparacion" msdata:parentkey="codayu" msdata:childkey="codayu" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="ayudantereparacion" msprop:Generator_RelationVarName="relationayudantereparacion" msprop:Generator_UserParentTable="ayudante" msprop:Generator_ParentPropName="ayudanteRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
