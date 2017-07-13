@@ -92,6 +92,7 @@ namespace softchape{
             CargarAyudante();
             CargarMaterial();
             CargarMecanico();
+            cmbayudante.Text = "SISTEMA DE TRANSMISION";
         }
 
         private void txtcant_TextChanged(object sender, EventArgs e){

@@ -28,12 +28,13 @@ namespace softchape
             var newAutomovil = new bdchapacoDataSetTableAdapters.autoTableAdapter();
 
             string name = nameTextBox.Text, last = lastTextBox.Text, ci = ciTextBox.Text, telef = telfTextBox.Text;
-            string model = modelTextBox.Text, brand = brandTextBox.Text, plate = plateTextBox.Text, year = yearTextBox.Text;
+            string model = modelTextBox.Text, brand = brandTextBox.Text, plate = plateTextBox.Text, year = yearTextBox.Text, color = colorTextBox.Text;
 
             newCliente.Insert(name, last, ci, telef);
 
             var codCliente = newCliente.getCodCliente(ci);
-            newAutomovil.Insert(plate, model, year, brand, (short)codCliente, year);
+
+            newAutomovil.Insert(plate, model, color, brand, (short)codCliente, year);
 
             MessageBox.Show("Cliente registrado correctamente", "Correcto", MessageBoxButtons.OK);
 
@@ -50,6 +51,11 @@ namespace softchape
         {
             var main = new Main();
             main.Show();
+        }
+
+        private void modelTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

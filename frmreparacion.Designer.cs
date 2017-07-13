@@ -38,6 +38,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtcant = new System.Windows.Forms.NumericUpDown();
             this.cmbmaterial = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,24 +64,23 @@
             this.btlcancelar = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnguardar = new System.Windows.Forms.Button();
-            this.txtcant = new System.Windows.Forms.NumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbreparacion = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmaterial)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtcant)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtcant)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -190,6 +190,28 @@
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MATERIAL";
+            // 
+            // txtcant
+            // 
+            this.txtcant.Location = new System.Drawing.Point(293, 27);
+            this.txtcant.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtcant.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtcant.Name = "txtcant";
+            this.txtcant.Size = new System.Drawing.Size(75, 20);
+            this.txtcant.TabIndex = 6;
+            this.txtcant.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // cmbmaterial
             // 
@@ -442,28 +464,6 @@
             this.btnguardar.Text = "REALIZAR";
             this.btnguardar.UseVisualStyleBackColor = true;
             // 
-            // txtcant
-            // 
-            this.txtcant.Location = new System.Drawing.Point(293, 27);
-            this.txtcant.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtcant.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txtcant.Name = "txtcant";
-            this.txtcant.Size = new System.Drawing.Size(75, 20);
-            this.txtcant.TabIndex = 6;
-            this.txtcant.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label17);
@@ -472,7 +472,7 @@
             this.groupBox8.Controls.Add(this.label11);
             this.groupBox8.Controls.Add(this.listBox1);
             this.groupBox8.Controls.Add(this.label10);
-            this.groupBox8.Controls.Add(this.comboBox3);
+            this.groupBox8.Controls.Add(this.cmbreparacion);
             this.groupBox8.Location = new System.Drawing.Point(11, 12);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(725, 68);
@@ -480,54 +480,16 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "TIPO DE REPARACION O SERVICIO";
             // 
-            // comboBox3
+            // label17
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(25, 32);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(177, 21);
-            this.comboBox3.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 16);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "SELECCIONAR";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(287, 9);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(435, 56);
-            this.listBox1.TabIndex = 6;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(319, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "COSTO:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(319, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 16);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "TIPO:";
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(416, 39);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(54, 16);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "label17";
             // 
             // label16
             // 
@@ -540,16 +502,59 @@
             this.label16.TabIndex = 9;
             this.label16.Text = "label16";
             // 
-            // label17
+            // label15
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(416, 39);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 16);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "label17";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(319, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 16);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "TIPO:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(319, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 16);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "COSTO:";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(287, 9);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(435, 56);
+            this.listBox1.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 16);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "SELECCIONAR";
+            // 
+            // cmbreparacion
+            // 
+            this.cmbreparacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbreparacion.FormattingEnabled = true;
+            this.cmbreparacion.Items.AddRange(new object[] {
+            "SISTEMA DE TRANSMISION",
+            "SISTEMA DE SUSPENSION",
+            "ENBRAGUES Y FRENOS",
+            "MOTORES GASOLINA"});
+            this.cmbreparacion.Location = new System.Drawing.Point(25, 32);
+            this.cmbreparacion.Name = "cmbreparacion";
+            this.cmbreparacion.Size = new System.Drawing.Size(177, 21);
+            this.cmbreparacion.TabIndex = 5;
             // 
             // frmreparacion
             // 
@@ -570,6 +575,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvmaterial)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtcant)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -577,7 +583,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtcant)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
@@ -629,6 +634,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbreparacion;
     }
 }
