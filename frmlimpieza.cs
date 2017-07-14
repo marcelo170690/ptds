@@ -24,6 +24,7 @@ namespace softchape{
         #endregion
         #region formularios
         Registro reg;
+        InfReciboLimpieza limp;
         #endregion
         #region tablas
         bdchapacoDataSet ds = new bdchapacoDataSet();
@@ -104,6 +105,10 @@ namespace softchape{
                 }catch (Exception){
                     
                 }
+                if (cmbvehiculo.Text == "")
+                    lklagregar.Visible = true;
+                else
+                    lklagregar.Visible = false;
             }
 
         }
@@ -265,8 +270,13 @@ namespace softchape{
                 GuardarDetalle(txtpulido, cbpulido, max);
                 GuardarDetalle(txtlimpinte, cbinterior, max);
                 GuardarDetalle(txtenserado, cbencerado, max);
-                if (MessageBox.Show("Desea imprimir la el recibo?", "titulo aqui", MessageBoxButtons.YesNo) == DialogResult.No)
-                    Close();
+                if (MessageBox.Show("Desea imprimir la el recibo?", "titulo aqui", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                    limp = new InfReciboLimpieza();
+                    limp.vplaca = vplaca;
+                    limp.vcodser = max;
+                    limp.ShowDialog();
+                }
+                Close();
             }
         }
     }
