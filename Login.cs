@@ -115,5 +115,10 @@ namespace softchape
                     "El campo no puede estar vacio");
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
