@@ -99,6 +99,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bdchapacoDataSet.cs">
+      <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="bdchapacoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,6 +131,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioAceite.Designer.cs">
+      <DependentUpon>frmCambioAceite.cs</DependentUpon>
     </Compile>
     <Compile Include="frmlimpieza.cs">
       <SubType>Form</SubType>
@@ -184,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioAceite.resx">
+      <DependentUpon>frmCambioAceite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlimpieza.resx">
       <DependentUpon>frmlimpieza.cs</DependentUpon>
@@ -265,10 +278,13 @@
     <Content Include="assets\alerta.png" />
     <Content Include="assets\bug.png" />
     <Content Include="assets\GESTIONAR.png" />
+    <None Include="assets\guardar.png" />
     <Content Include="assets\icidagnostico.png" />
     <Content Include="assets\informes.png" />
     <Content Include="assets\login.png" />
     <Content Include="assets\mecanico.png" />
+    <None Include="assets\salir22.png" />
+    <None Include="assets\salir1.png" />
     <Content Include="assets\user.png" />
     <Content Include="assets\userlogin.png" />
     <Content Include="bdchapaco.accdb" />

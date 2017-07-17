@@ -8,22 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace softchape
-{
-    public partial class Registro : Form
-    {
-        public Registro()
-        {
+namespace softchape{
+    public partial class Registro : Form{
+        public Registro(){
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+        private void label1_Click(object sender, EventArgs e){
 
         }
 
-        private void okButton_Click(object sender, EventArgs e)
-        {
+        private void okButton_Click(object sender, EventArgs e){
             var newCliente = new bdchapacoDataSetTableAdapters.clienteTableAdapter();
             var newAutomovil = new bdchapacoDataSetTableAdapters.autoTableAdapter();
 
@@ -42,8 +37,7 @@ namespace softchape
 
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
-        {
+        private void cancelButton_Click(object sender, EventArgs e){
             this.Close();
         }
 
