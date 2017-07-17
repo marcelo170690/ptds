@@ -113,6 +113,16 @@ namespace softchape.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guardar {
+            get {
+                object obj = ResourceManager.GetObject("guardar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icidagnostico {
             get {
                 object obj = ResourceManager.GetObject("icidagnostico", resourceCulture);
@@ -146,6 +156,26 @@ namespace softchape.Properties {
         internal static System.Drawing.Bitmap mecanico {
             get {
                 object obj = ResourceManager.GetObject("mecanico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salir1 {
+            get {
+                object obj = ResourceManager.GetObject("salir1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salir22 {
+            get {
+                object obj = ResourceManager.GetObject("salir22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
