@@ -70,8 +70,11 @@
     <AssemblyOriginatorKeyFile>sign.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -86,12 +89,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Diagnostico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Diagnostico.Designer.cs">
       <DependentUpon>Diagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds_informes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_informes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Editar.cs">
       <SubType>Form</SubType>
@@ -105,11 +114,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmlimpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlimpieza.Designer.cs">
+      <DependentUpon>frmlimpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReciboReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReciboReparacion.Designer.cs">
+      <DependentUpon>frmReciboReparacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmreparacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmreparacion.Designer.cs">
       <DependentUpon>frmreparacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="global.cs" />
+    <Compile Include="InfReciboLimpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfReciboLimpieza.Designer.cs">
+      <DependentUpon>InfReciboLimpieza.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -143,9 +171,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmlimpieza.resx">
+      <DependentUpon>frmlimpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReciboReparacion.resx">
+      <DependentUpon>frmReciboReparacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmreparacion.resx">
       <DependentUpon>frmreparacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfReciboLimpieza.rdlc" />
+    <EmbeddedResource Include="InfReciboLimpieza.resx">
+      <DependentUpon>InfReciboLimpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfReparacion.rdlc" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,14 +206,28 @@
     </EmbeddedResource>
     <None Include="bdchapacoDataSet.xsc">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="bdchapacoDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>bdchapacoDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="bdchapacoDataSet.xss">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ds_informes.xsc">
+      <DependentUpon>ds_informes.xsd</DependentUpon>
+    </None>
+    <None Include="ds_informes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_informes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_informes.xss">
+      <DependentUpon>ds_informes.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -203,9 +256,7 @@
     <Content Include="assets\mecanico.png" />
     <Content Include="assets\user.png" />
     <Content Include="assets\userlogin.png" />
-    <Content Include="bdchapaco.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="bdchapaco.accdb" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

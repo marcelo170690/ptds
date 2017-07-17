@@ -40,6 +40,8 @@
             this.ciTextBox = new System.Windows.Forms.TextBox();
             this.telfTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.colorTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.yearTextBox = new System.Windows.Forms.TextBox();
             this.brandTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.modelTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.colorTextBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,6 +178,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MOVILIDAD";
             // 
+            // colorTextBox
+            // 
+            this.colorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorTextBox.Location = new System.Drawing.Point(230, 36);
+            this.colorTextBox.Name = "colorTextBox";
+            this.colorTextBox.Size = new System.Drawing.Size(204, 26);
+            this.colorTextBox.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(227, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 20);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "COLOR";
+            // 
             // yearTextBox
             // 
             this.yearTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,24 +269,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "MODELO";
             // 
-            // colorTextBox
-            // 
-            this.colorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorTextBox.Location = new System.Drawing.Point(230, 36);
-            this.colorTextBox.Name = "colorTextBox";
-            this.colorTextBox.Size = new System.Drawing.Size(204, 26);
-            this.colorTextBox.TabIndex = 20;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(227, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 20);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "COLOR";
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,7 +307,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox lastTextBox;
-        private System.Windows.Forms.TextBox ciTextBox;
         private System.Windows.Forms.TextBox telfTextBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox yearTextBox;
@@ -320,5 +319,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox colorTextBox;
         private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox ciTextBox;
     }
 }
