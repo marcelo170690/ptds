@@ -32,7 +32,7 @@ namespace softchape{
 
         private void editClienteButton_Click(object sender, EventArgs e){
             var registro = new Registro();
-            registro.Show();
+            registro.Show();    
         }
 
         private void button2_Click(object sender, EventArgs e){
@@ -67,6 +67,12 @@ namespace softchape{
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            Auxiliar auxiliar = new Auxiliar();
+            auxiliar.Show();
         }
     }
 }

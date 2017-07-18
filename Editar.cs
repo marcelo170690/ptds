@@ -91,5 +91,10 @@ namespace softchape
         {
             this.Close();
         }
+
+        private void Editar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.movilComboBox = new System.Windows.Forms.ComboBox();
             this.colorTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.yearTextBox = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
-            this.movilComboBox = new System.Windows.Forms.ComboBox();
             this.codTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.okCodButton = new System.Windows.Forms.Button();
@@ -77,6 +77,15 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MOVILIDAD";
+            // 
+            // movilComboBox
+            // 
+            this.movilComboBox.FormattingEnabled = true;
+            this.movilComboBox.Location = new System.Drawing.Point(6, 25);
+            this.movilComboBox.Name = "movilComboBox";
+            this.movilComboBox.Size = new System.Drawing.Size(206, 28);
+            this.movilComboBox.TabIndex = 24;
+            this.movilComboBox.SelectedIndexChanged += new System.EventHandler(this.movilComboBox_SelectedIndexChanged);
             // 
             // colorTextBox
             // 
@@ -272,15 +281,6 @@
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
-            // movilComboBox
-            // 
-            this.movilComboBox.FormattingEnabled = true;
-            this.movilComboBox.Location = new System.Drawing.Point(6, 25);
-            this.movilComboBox.Name = "movilComboBox";
-            this.movilComboBox.Size = new System.Drawing.Size(206, 28);
-            this.movilComboBox.TabIndex = 24;
-            this.movilComboBox.SelectedIndexChanged += new System.EventHandler(this.movilComboBox_SelectedIndexChanged);
-            // 
             // codTextBox
             // 
             this.codTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,6 +332,7 @@
             this.Controls.Add(this.okButton);
             this.Name = "Editar";
             this.Text = "Editar";
+            this.Load += new System.EventHandler(this.Editar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

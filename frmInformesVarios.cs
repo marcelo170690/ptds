@@ -39,8 +39,8 @@ namespace softchape{
         void cargar() {
             tato.todos(ds.todos);
             dgvtodos.DataSource=ds.todos;
-            /*dgvtodos.Columns[0].Visible = false;
-            dgvtodos.Columns[3].Visible = false;*/
+            dgvtodos.Columns[0].Visible = false;
+            dgvtodos.Columns[3].Visible = false;
         }
         void color() {
             int o = dgvtodos.Rows.Count;

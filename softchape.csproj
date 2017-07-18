@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -104,6 +104,17 @@
     </Compile>
     <Compile Include="AgregarAuto.Designer.cs">
       <DependentUpon>AgregarAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auxiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auxiliar.Designer.cs">
+      <DependentUpon>Auxiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auxiliar1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>auxiliar.xsd</DependentUpon>
     </Compile>
     <Compile Include="bdchapacoDataSet.cs">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
@@ -200,6 +211,9 @@
     <EmbeddedResource Include="AgregarAuto.resx">
       <DependentUpon>AgregarAuto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Auxiliar.resx">
+      <DependentUpon>Auxiliar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diagnostico.resx">
       <DependentUpon>Diagnostico.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +262,17 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="auxiliar.xsc">
+      <DependentUpon>auxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="auxiliar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>auxiliar1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="auxiliar.xss">
+      <DependentUpon>auxiliar.xsd</DependentUpon>
+    </None>
     <None Include="bdchapacoDataSet.xsc">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

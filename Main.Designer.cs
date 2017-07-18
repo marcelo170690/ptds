@@ -40,9 +40,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -61,8 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
@@ -135,7 +130,6 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
@@ -148,7 +142,7 @@
             // 
             this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Controls.Add(this.button6);
-            this.panel8.Location = new System.Drawing.Point(454, 151);
+            this.panel8.Location = new System.Drawing.Point(333, 150);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(220, 145);
             this.panel8.TabIndex = 8;
@@ -178,7 +172,7 @@
             // 
             this.panel7.Controls.Add(this.pictureBox7);
             this.panel7.Controls.Add(this.button5);
-            this.panel7.Location = new System.Drawing.Point(229, 151);
+            this.panel7.Location = new System.Drawing.Point(110, 151);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(220, 145);
             this.panel7.TabIndex = 8;
@@ -203,35 +197,6 @@
             this.button5.Text = "CAMBIO DE ACEITE";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Location = new System.Drawing.Point(3, 151);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(220, 145);
-            this.panel6.TabIndex = 9;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::softchape.Properties.Resources.GESTIONAR;
-            this.pictureBox6.Location = new System.Drawing.Point(63, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(97, 97);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(3, 106);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(214, 36);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "GESTIONAR USUARIO";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -291,6 +256,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "AUXILIO VEHICULAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // panel3
             // 
@@ -364,8 +330,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -396,9 +360,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button3;
