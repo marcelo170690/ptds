@@ -68,6 +68,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LISTA DE SERVICIOS REALIZADOS";
+            this.groupBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox1_Paint);
             // 
             // groupBox2
             // 
@@ -79,6 +80,7 @@
             this.groupBox2.Size = new System.Drawing.Size(128, 284);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // button1
             // 
@@ -116,6 +118,7 @@
             this.groupBox3.Size = new System.Drawing.Size(299, 91);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox3_Paint);
             // 
             // label6
             // 

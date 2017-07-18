@@ -25,6 +25,7 @@ namespace softchape{
         #region formularios
         InfReciboLimpieza limp;
         frmReciboReparacion repa;
+        global gl = new global();
         #endregion
         #region funciones
         string placaX(int cod, string tipo){
@@ -89,6 +90,21 @@ namespace softchape{
         private void frmInformesVarios_Activated(object sender, EventArgs e){
             cargar();
             color();
+        }
+
+        private void groupBox3_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox3, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox1_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox1, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox2_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox2, e.Graphics, Color.Black, Color.Black);
         }
     }
 }

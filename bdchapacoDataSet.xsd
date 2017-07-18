@@ -1239,7 +1239,10 @@ WHERE        (codcac = ?)</CommandText>
       <msdata:Relationship name="mecanicoreparacion" msdata:parent="mecanico" msdata:child="reparacion" msdata:parentkey="codmec" msdata:childkey="codmec" msprop:Generator_UserChildTable="reparacion" msprop:Generator_ChildPropName="GetreparacionRows" msprop:Generator_UserRelationName="mecanicoreparacion" msprop:Generator_ParentPropName="mecanicoRow" msprop:Generator_RelationVarName="relationmecanicoreparacion" msprop:Generator_UserParentTable="mecanico" />
       <msdata:Relationship name="autoservicio" msdata:parent="auto" msdata:child="servicio" msdata:parentkey="placa" msdata:childkey="placa" msprop:Generator_UserChildTable="servicio" msprop:Generator_ChildPropName="GetservicioRows" msprop:Generator_UserRelationName="autoservicio" msprop:Generator_RelationVarName="relationautoservicio" msprop:Generator_UserParentTable="auto" msprop:Generator_ParentPropName="autoRow" />
       <msdata:Relationship name="serviciotdetalle" msdata:parent="servicio" msdata:child="tdetalle" msdata:parentkey="codser" msdata:childkey="codser" msprop:Generator_UserChildTable="tdetalle" msprop:Generator_ChildPropName="GettdetalleRows" msprop:Generator_UserRelationName="serviciotdetalle" msprop:Generator_RelationVarName="relationserviciotdetalle" msprop:Generator_UserParentTable="servicio" msprop:Generator_ParentPropName="servicioRow" />
+<<<<<<< HEAD
       <msdata:Relationship name="autoCaceite" msdata:parent="auto" msdata:child="Caceite" msdata:parentkey="placa" msdata:childkey="placa" msprop:Generator_UserChildTable="Caceite" msprop:Generator_ChildPropName="GetCaceiteRows" msprop:Generator_UserRelationName="autoCaceite" msprop:Generator_ParentPropName="autoRow" msprop:Generator_RelationVarName="relationautoCaceite" msprop:Generator_UserParentTable="auto" />
+=======
+>>>>>>> e76ec89f76a6b95d99d4bd176afd33f358ebdc4a
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

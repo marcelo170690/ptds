@@ -19,8 +19,13 @@ namespace softchape
 
         private void addMovilButton_Click(object sender, EventArgs e)
         {
-            
-            
+            var clienteAdpater = new bdchapacoDataSetTableAdapters.clienteTableAdapter();
+
+            AgregarAuto auto = new AgregarAuto();
+            auto.codCliente = (short)clienteAdpater.getCodCliente(clienteTextBox.Text);
+            auto.nombre = clienteAdpater.getNombre((short)clienteAdpater.getCodCliente(clienteTextBox.Text)).ToString() + " " + clienteAdpater.getApellidos((short)clienteAdpater.getCodCliente(clienteTextBox.Text)).ToString();
+            auto.carnet = clienteTextBox.Text;
+
         }
 
         private void clienteTextBox_Validating(object sender, CancelEventArgs e)
@@ -45,6 +50,7 @@ namespace softchape
         private void okButton_Click(object sender, EventArgs e)
         {
             var diagnostico = new bdchapacoDataSetTableAdapters.diagnosticoTableAdapter();
+            var clienteAdpater = new bdchapacoDataSetTableAdapters.clienteTableAdapter();
 
             diagnostico.Insert(detailTextBox.Text, DateTime.Now, movilComboBox.Text);
 
@@ -52,7 +58,14 @@ namespace softchape
 
             if (dialog == DialogResult.Yes)
             {
+                frmreparacion frm = new frmreparacion();
 
+                frm.vplaca = movilComboBox.Text;
+                frm.nc = clienteAdpater.getNombre((short)clienteAdpater.getCodCliente(clienteTextBox.Text)).ToString() + " " + clienteAdpater.getApellidos((short)clienteAdpater.getCodCliente(clienteTextBox.Text)).ToString();
+
+                frm.Show();
+
+                this.Close();
             }
             else
             {

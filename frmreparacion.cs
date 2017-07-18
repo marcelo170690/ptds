@@ -87,6 +87,9 @@ namespace softchape{
             CargarAyudante();
             CargarMaterial();
             CargarMecanico();
+
+            label2.Text = nc.ToUpper();
+            label3.Text = vplaca.ToUpper();
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
