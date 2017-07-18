@@ -99,9 +99,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAuto.Designer.cs">
+      <DependentUpon>AgregarAuto.cs</DependentUpon>
+    </Compile>
     <Compile Include="bdchapacoDataSet.cs">
       <DependentUpon>bdchapacoDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="bdchapacoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -186,6 +191,9 @@
     </Compile>
     <Compile Include="Singleton.cs" />
     <Compile Include="UserLevel.cs" />
+    <EmbeddedResource Include="AgregarAuto.resx">
+      <DependentUpon>AgregarAuto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diagnostico.resx">
       <DependentUpon>Diagnostico.cs</DependentUpon>
     </EmbeddedResource>
