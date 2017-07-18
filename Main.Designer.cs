@@ -172,6 +172,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "INFORMES";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel7
             // 
@@ -201,6 +202,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "CAMBIO DE ACEITE";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel6
             // 
@@ -351,6 +353,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Main";
             this.Text = "Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.Shown += new System.EventHandler(this.Main_Shown);
             this.panel1.ResumeLayout(false);

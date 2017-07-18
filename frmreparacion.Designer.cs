@@ -92,6 +92,7 @@
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "TIPO DE REPARACION O SERVICIO";
+            this.groupBox8.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox8_Paint);
             // 
             // label10
             // 
@@ -124,29 +125,33 @@
             // 
             this.groupBox7.Controls.Add(this.button3);
             this.groupBox7.Controls.Add(this.btnguardar);
-            this.groupBox7.Location = new System.Drawing.Point(753, 305);
+            this.groupBox7.Location = new System.Drawing.Point(753, 295);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(277, 74);
+            this.groupBox7.Size = new System.Drawing.Size(277, 104);
             this.groupBox7.TabIndex = 11;
             this.groupBox7.TabStop = false;
+            this.groupBox7.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox7_Paint);
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
             // 
             // button3
             // 
+            this.button3.BackgroundImage = global::softchape.Properties.Resources.salir1;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(149, 16);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 46);
+            this.button3.Size = new System.Drawing.Size(122, 82);
             this.button3.TabIndex = 3;
-            this.button3.Text = "REALIZAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnguardar
             // 
+            this.btnguardar.BackgroundImage = global::softchape.Properties.Resources.guardar;
+            this.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnguardar.Location = new System.Drawing.Point(16, 17);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(122, 46);
+            this.btnguardar.Size = new System.Drawing.Size(122, 81);
             this.btnguardar.TabIndex = 2;
-            this.btnguardar.Text = "REALIZAR";
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
@@ -159,10 +164,11 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(12, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(735, 366);
+            this.groupBox1.Size = new System.Drawing.Size(735, 386);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DETALLE REPARACION";
+            this.groupBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox1_Paint);
             // 
             // groupBox6
             // 
@@ -171,16 +177,17 @@
             this.groupBox6.Controls.Add(this.dgvmaterial);
             this.groupBox6.Location = new System.Drawing.Point(339, 117);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(383, 227);
+            this.groupBox6.Size = new System.Drawing.Size(383, 263);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "DETALLE MATERIAL A USAR";
+            this.groupBox6.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox6_Paint);
             // 
             // lbltotalmaterial
             // 
             this.lbltotalmaterial.AutoSize = true;
             this.lbltotalmaterial.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalmaterial.Location = new System.Drawing.Point(80, 201);
+            this.lbltotalmaterial.Location = new System.Drawing.Point(80, 235);
             this.lbltotalmaterial.Name = "lbltotalmaterial";
             this.lbltotalmaterial.Size = new System.Drawing.Size(17, 16);
             this.lbltotalmaterial.TabIndex = 9;
@@ -190,7 +197,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(14, 199);
+            this.label14.Location = new System.Drawing.Point(14, 235);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 16);
             this.label14.TabIndex = 8;
@@ -210,7 +217,7 @@
             this.dgvmaterial.Name = "dgvmaterial";
             this.dgvmaterial.ReadOnly = true;
             this.dgvmaterial.RowHeadersVisible = false;
-            this.dgvmaterial.Size = new System.Drawing.Size(351, 169);
+            this.dgvmaterial.Size = new System.Drawing.Size(351, 201);
             this.dgvmaterial.TabIndex = 0;
             // 
             // Column1
@@ -249,14 +256,15 @@
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Location = new System.Drawing.Point(339, 22);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(383, 89);
+            this.groupBox5.Size = new System.Drawing.Size(308, 89);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MATERIAL";
+            this.groupBox5.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox5_Paint);
             // 
             // nudcant
             // 
-            this.nudcant.Location = new System.Drawing.Point(293, 27);
+            this.nudcant.Location = new System.Drawing.Point(99, 53);
             this.nudcant.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -280,7 +288,7 @@
             // 
             this.cmbmaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbmaterial.FormattingEnabled = true;
-            this.cmbmaterial.Location = new System.Drawing.Point(83, 26);
+            this.cmbmaterial.Location = new System.Drawing.Point(93, 16);
             this.cmbmaterial.Name = "cmbmaterial";
             this.cmbmaterial.Size = new System.Drawing.Size(121, 21);
             this.cmbmaterial.TabIndex = 5;
@@ -289,28 +297,30 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(212, 57);
+            this.button2.BackgroundImage = global::softchape.Properties.Resources.agregar;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(264, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(43, 44);
             this.button2.TabIndex = 4;
-            this.button2.Text = "AGREGAR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(293, 57);
+            this.button1.BackgroundImage = global::softchape.Properties.Resources.quitar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(264, 46);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(43, 44);
             this.button1.TabIndex = 3;
-            this.button1.Text = "QUITAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(215, 27);
+            this.label12.Location = new System.Drawing.Point(16, 53);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 16);
             this.label12.TabIndex = 2;
@@ -320,7 +330,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 27);
+            this.label13.Location = new System.Drawing.Point(16, 17);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 16);
             this.label13.TabIndex = 1;
@@ -338,6 +348,7 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "GRUPO EN REPARACION";
+            this.groupBox3.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox3_Paint);
             // 
             // cmbayudante
             // 
@@ -393,6 +404,7 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CLIENTE Y VEHICULO";
+            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // label4
             // 
@@ -444,17 +456,18 @@
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Location = new System.Drawing.Point(753, 13);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(277, 117);
+            this.groupBox4.Size = new System.Drawing.Size(277, 102);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "DETALLES DEL COSTO PARCIAL";
+            this.groupBox4.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox4_Paint);
             // 
             // lblTOTAL
             // 
             this.lblTOTAL.AutoSize = true;
             this.lblTOTAL.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTOTAL.ForeColor = System.Drawing.Color.Blue;
-            this.lblTOTAL.Location = new System.Drawing.Point(128, 86);
+            this.lblTOTAL.Location = new System.Drawing.Point(128, 73);
             this.lblTOTAL.Name = "lblTOTAL";
             this.lblTOTAL.Size = new System.Drawing.Size(17, 16);
             this.lblTOTAL.TabIndex = 7;
@@ -464,7 +477,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 86);
+            this.label9.Location = new System.Drawing.Point(22, 73);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 16);
             this.label9.TabIndex = 6;
@@ -472,7 +485,7 @@
             // 
             // txtdescuento
             // 
-            this.txtdescuento.Location = new System.Drawing.Point(131, 55);
+            this.txtdescuento.Location = new System.Drawing.Point(131, 47);
             this.txtdescuento.Name = "txtdescuento";
             this.txtdescuento.Size = new System.Drawing.Size(123, 20);
             this.txtdescuento.TabIndex = 5;
@@ -481,7 +494,7 @@
             // 
             // txtcosto
             // 
-            this.txtcosto.Location = new System.Drawing.Point(131, 26);
+            this.txtcosto.Location = new System.Drawing.Point(131, 22);
             this.txtcosto.Name = "txtcosto";
             this.txtcosto.Size = new System.Drawing.Size(123, 20);
             this.txtcosto.TabIndex = 4;
@@ -492,7 +505,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 56);
+            this.label6.Location = new System.Drawing.Point(22, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 16);
             this.label6.TabIndex = 3;
@@ -502,7 +515,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(22, 27);
+            this.label7.Location = new System.Drawing.Point(22, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 0;
@@ -511,12 +524,13 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.txtonbservacion);
-            this.groupBox9.Location = new System.Drawing.Point(753, 136);
+            this.groupBox9.Location = new System.Drawing.Point(753, 121);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(277, 168);
             this.groupBox9.TabIndex = 13;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "OBSERVACIONES";
+            this.groupBox9.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox9_Paint);
             // 
             // txtonbservacion
             // 
@@ -530,7 +544,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 403);
+            this.ClientSize = new System.Drawing.Size(1042, 411);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox7);

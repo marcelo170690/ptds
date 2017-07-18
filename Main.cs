@@ -15,6 +15,8 @@ namespace softchape{
         }
         #region formularios
         frmlimpieza limp;
+        frmCambioAceite frmca;
+        frmInformesVarios frmiv;
         #endregion
         private void Main_Shown(object sender, EventArgs e){
 
@@ -52,6 +54,21 @@ namespace softchape{
         private void button3_Click(object sender, EventArgs e){
             limp = new frmlimpieza();
             limp.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e){
+            frmca = new frmCambioAceite();
+            frmca.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e){
+            frmiv = new frmInformesVarios();
+            frmiv.ShowDialog();
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

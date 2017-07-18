@@ -64,7 +64,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>sign.snk</AssemblyOriginatorKeyFile>
@@ -143,6 +143,12 @@
     <Compile Include="frmCambioAceite.Designer.cs">
       <DependentUpon>frmCambioAceite.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInformesVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformesVarios.Designer.cs">
+      <DependentUpon>frmInformesVarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmlimpieza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCambioAceite.resx">
       <DependentUpon>frmCambioAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformesVarios.resx">
+      <DependentUpon>frmInformesVarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlimpieza.resx">
       <DependentUpon>frmlimpieza.cs</DependentUpon>
@@ -283,16 +292,19 @@
   <ItemGroup>
     <Content Include="assets\aceite.png" />
     <Content Include="assets\addUser.png" />
+    <None Include="assets\agregar.png" />
     <Content Include="assets\alerta.png" />
     <Content Include="assets\bug.png" />
     <Content Include="assets\GESTIONAR.png" />
     <None Include="assets\guardar.png" />
     <Content Include="assets\icidagnostico.png" />
+    <None Include="assets\imprimir.png" />
     <Content Include="assets\informes.png" />
     <Content Include="assets\login.png" />
     <Content Include="assets\mecanico.png" />
     <None Include="assets\salir22.png" />
     <None Include="assets\salir1.png" />
+    <None Include="assets\quitar.png" />
     <Content Include="assets\user.png" />
     <Content Include="assets\userlogin.png" />
     <Content Include="bdchapaco.accdb" />
