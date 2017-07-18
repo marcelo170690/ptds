@@ -33,8 +33,6 @@ namespace softchape{
         private void editClienteButton_Click(object sender, EventArgs e){
             var registro = new Registro();
             registro.Show();
-
-            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e){

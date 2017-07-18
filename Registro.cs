@@ -43,11 +43,15 @@ namespace softchape{
 
         private void Registro_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var main = new Main();
-            main.Show();
+
         }
 
         private void modelTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registro_Load(object sender, EventArgs e)
         {
 
         }
