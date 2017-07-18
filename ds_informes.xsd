@@ -181,6 +181,32 @@ WHERE        (codser = ?)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="todosTableAdapter" GeneratorDataComponentClassName="todosTableAdapter" Name="todos" UserDataComponentName="todosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdchapacoConnectionString (Settings)" DbObjectName="Caceite" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="todos" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="todos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="todos">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        codcac AS x, costo, fecha, '1' AS f
+FROM            Caceite
+UNION
+SELECT        codrep AS x, costo, fecha, '2' AS f
+FROM            reparacion
+UNION
+SELECT        codser AS x, descuento AS costo, fecha, '3' AS f
+FROM            servicio</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x" DataSetColumn="x" />
+              <Mapping SourceColumn="costo" DataSetColumn="costo" />
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+              <Mapping SourceColumn="f" DataSetColumn="f" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -330,6 +356,22 @@ WHERE        (codser = ?)</CommandText>
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="todos" msprop:Generator_TableClassName="todosDataTable" msprop:Generator_TableVarName="tabletodos" msprop:Generator_RowChangedName="todosRowChanged" msprop:Generator_TablePropName="todos" msprop:Generator_RowDeletingName="todosRowDeleting" msprop:Generator_RowChangingName="todosRowChanging" msprop:Generator_RowEvHandlerName="todosRowChangeEventHandler" msprop:Generator_RowDeletedName="todosRowDeleted" msprop:Generator_RowClassName="todosRow" msprop:Generator_UserTableName="todos" msprop:Generator_RowEvArgName="todosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x" msprop:Generator_ColumnVarNameInTable="columnx" msprop:Generator_ColumnPropNameInRow="x" msprop:Generator_ColumnPropNameInTable="xColumn" msprop:Generator_UserColumnName="x" type="xs:int" minOccurs="0" />
+              <xs:element name="costo" msprop:Generator_ColumnVarNameInTable="columncosto" msprop:Generator_ColumnPropNameInRow="costo" msprop:Generator_ColumnPropNameInTable="costoColumn" msprop:Generator_UserColumnName="costo" type="xs:double" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="f" msprop:Generator_ColumnVarNameInTable="columnf" msprop:Generator_ColumnPropNameInRow="f" msprop:Generator_ColumnPropNameInTable="fColumn" msprop:Generator_UserColumnName="f" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

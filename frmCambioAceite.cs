@@ -28,8 +28,15 @@ namespace softchape{
         clienteTableAdapter tac = new clienteTableAdapter();
         servicioTableAdapter taser = new servicioTableAdapter();
         tdetalleTableAdapter tadet = new tdetalleTableAdapter();
+        CaceiteTableAdapter taac = new CaceiteTableAdapter();
         #endregion
         #region funciones
+        void limpiar() {
+            txtcosto.Text = "0";
+            txtobservaciones.Clear();
+            txtci.Clear();
+            txtci.Focus();
+        }
         void CargarVehiculo() {
             taa.MaestroVehiculo(ds.auto,vcodcliente);
             cmbvehiculo.DataSource = ds.auto;
@@ -94,7 +101,18 @@ namespace softchape{
         }
 
         private void btnguardar_Click(object sender, EventArgs e){
+            try{
+                if (verificar_txt(txtcosto.Text) != 0) {
+                    taac.Insert(cmbmarca.Text, verificar_txt(txtcosto.Text), vplaca, txtobservaciones.Text, DateTime.Now);
+                    limpiar();
+                }
+            }catch (Exception){
+                
+            }
+        }
 
+        private void txtcosto_KeyPress(object sender, KeyPressEventArgs e){
+            gl.decimales(e);
         }
     }
 }

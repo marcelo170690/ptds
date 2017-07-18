@@ -15,7 +15,7 @@ namespace softchape
         static void Main(){
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCambioAceite());
+            Application.Run(new Login());
         }
     }
 }

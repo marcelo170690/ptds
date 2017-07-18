@@ -43,6 +43,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnsalir = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
+            this.txtcosto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,7 +125,7 @@
             // txtobservaciones
             // 
             this.txtobservaciones.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
-            this.txtobservaciones.Location = new System.Drawing.Point(20, 84);
+            this.txtobservaciones.Location = new System.Drawing.Point(20, 117);
             this.txtobservaciones.Multiline = true;
             this.txtobservaciones.Name = "txtobservaciones";
             this.txtobservaciones.Size = new System.Drawing.Size(336, 144);
@@ -133,7 +135,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
-            this.label2.Location = new System.Drawing.Point(6, 61);
+            this.label2.Location = new System.Drawing.Point(16, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 5;
@@ -143,10 +145,21 @@
             // 
             this.cmbmarca.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.cmbmarca.FormattingEnabled = true;
+            this.cmbmarca.Items.AddRange(new object[] {
+            "CASTROL",
+            "PEENZIOL",
+            "MOBIL1",
+            "MOBIL2",
+            "MOBIL 3",
+            "AMSOIL",
+            "PETROBRAS",
+            "PREMIUN GLS",
+            "NOCHS DDS"});
             this.cmbmarca.Location = new System.Drawing.Point(133, 25);
             this.cmbmarca.Name = "cmbmarca";
             this.cmbmarca.Size = new System.Drawing.Size(176, 28);
             this.cmbmarca.TabIndex = 0;
+            this.cmbmarca.Text = "CASTROL";
             // 
             // label3
             // 
@@ -160,6 +173,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtcosto);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cmbmarca);
             this.groupBox1.Controls.Add(this.label2);
@@ -167,7 +182,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.groupBox1.Location = new System.Drawing.Point(12, 150);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(373, 245);
+            this.groupBox1.Size = new System.Drawing.Size(373, 281);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle Cambio Aceite";
@@ -209,11 +224,31 @@
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
+            // txtcosto
+            // 
+            this.txtcosto.Location = new System.Drawing.Point(76, 59);
+            this.txtcosto.Name = "txtcosto";
+            this.txtcosto.Size = new System.Drawing.Size(77, 32);
+            this.txtcosto.TabIndex = 6;
+            this.txtcosto.Text = "0";
+            this.txtcosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtcosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcosto_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.label1.Location = new System.Drawing.Point(16, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Costo";
+            // 
             // frmCambioAceite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 410);
+            this.ClientSize = new System.Drawing.Size(525, 446);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -247,5 +282,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtcosto;
     }
 }

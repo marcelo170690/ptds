@@ -152,6 +152,7 @@ namespace softchape{
 
         private void button2_Click(object sender, EventArgs e){
             limpiar();
+            Close();
         }
 
         private void txtci_TextChanged(object sender, EventArgs e){
@@ -278,6 +279,30 @@ namespace softchape{
                 }
                 Close();
             }
+        }
+
+        private void groupBox1_Paint(object sender, PaintEventArgs e){
+            gl.DrawGroupBox(groupBox1, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox5_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox5, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox2_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox2, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox3_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox3, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox4_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox4, e.Graphics, Color.Black, Color.Black);
         }
     }
 }

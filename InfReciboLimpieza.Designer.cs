@@ -32,19 +32,39 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.ds_informes = new softchape.ds_informes();
             this.InfClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.InfClienteTableAdapter = new softchape.ds_informesTableAdapters.InfClienteTableAdapter();
+            this.ds_informes = new softchape.ds_informes();
             this.InfServicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.InfServicioTableAdapter = new softchape.ds_informesTableAdapters.InfServicioTableAdapter();
             this.InfTdetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.InfClienteTableAdapter = new softchape.ds_informesTableAdapters.InfClienteTableAdapter();
+            this.InfServicioTableAdapter = new softchape.ds_informesTableAdapters.InfServicioTableAdapter();
             this.InfTdetalleTableAdapter = new softchape.ds_informesTableAdapters.InfTdetalleTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.ds_informes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds_informes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfServicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfTdetalleBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // InfClienteBindingSource
+            // 
+            this.InfClienteBindingSource.DataMember = "InfCliente";
+            this.InfClienteBindingSource.DataSource = this.ds_informes;
+            // 
+            // ds_informes
+            // 
+            this.ds_informes.DataSetName = "ds_informes";
+            this.ds_informes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // InfServicioBindingSource
+            // 
+            this.InfServicioBindingSource.DataMember = "InfServicio";
+            this.InfServicioBindingSource.DataSource = this.ds_informes;
+            // 
+            // InfTdetalleBindingSource
+            // 
+            this.InfTdetalleBindingSource.DataMember = "InfTdetalle";
+            this.InfTdetalleBindingSource.DataSource = this.ds_informes;
             // 
             // reportViewer1
             // 
@@ -61,36 +81,16 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "softchape.InfReciboLimpieza.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(773, 400);
+            this.reportViewer1.Size = new System.Drawing.Size(773, 503);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // ds_informes
-            // 
-            this.ds_informes.DataSetName = "ds_informes";
-            this.ds_informes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // InfClienteBindingSource
-            // 
-            this.InfClienteBindingSource.DataMember = "InfCliente";
-            this.InfClienteBindingSource.DataSource = this.ds_informes;
             // 
             // InfClienteTableAdapter
             // 
             this.InfClienteTableAdapter.ClearBeforeFill = true;
             // 
-            // InfServicioBindingSource
-            // 
-            this.InfServicioBindingSource.DataMember = "InfServicio";
-            this.InfServicioBindingSource.DataSource = this.ds_informes;
-            // 
             // InfServicioTableAdapter
             // 
             this.InfServicioTableAdapter.ClearBeforeFill = true;
-            // 
-            // InfTdetalleBindingSource
-            // 
-            this.InfTdetalleBindingSource.DataMember = "InfTdetalle";
-            this.InfTdetalleBindingSource.DataSource = this.ds_informes;
             // 
             // InfTdetalleTableAdapter
             // 
@@ -100,13 +100,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 400);
+            this.ClientSize = new System.Drawing.Size(773, 503);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "InfReciboLimpieza";
-            this.Text = "InfReciboLimpieza";
             this.Load += new System.EventHandler(this.InfReciboLimpieza_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ds_informes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds_informes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfServicioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfTdetalleBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -145,6 +145,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CLIENTE";
+            this.groupBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox1_Paint);
             // 
             // groupBox2
             // 
@@ -161,6 +162,7 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "LIMPIEZA";
+            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // txtengrasado
             // 
@@ -241,6 +243,7 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "MAS SERVICIOS";
+            this.groupBox3.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox3_Paint);
             // 
             // label3
             // 
@@ -340,6 +343,7 @@
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "COSTO TOTAL";
+            this.groupBox4.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox4_Paint);
             // 
             // lbltotal
             // 
@@ -399,23 +403,25 @@
             // 
             // btncancelar
             // 
+            this.btncancelar.BackgroundImage = global::softchape.Properties.Resources.salir1;
+            this.btncancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncancelar.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancelar.Location = new System.Drawing.Point(868, 323);
+            this.btncancelar.Location = new System.Drawing.Point(900, 323);
             this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(123, 53);
+            this.btncancelar.Size = new System.Drawing.Size(90, 90);
             this.btncancelar.TabIndex = 6;
-            this.btncancelar.Text = "CANCELAR";
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnfinalizar
             // 
+            this.btnfinalizar.BackgroundImage = global::softchape.Properties.Resources.guardar;
+            this.btnfinalizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnfinalizar.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfinalizar.Location = new System.Drawing.Point(739, 323);
+            this.btnfinalizar.Location = new System.Drawing.Point(805, 323);
             this.btnfinalizar.Name = "btnfinalizar";
-            this.btnfinalizar.Size = new System.Drawing.Size(123, 53);
+            this.btnfinalizar.Size = new System.Drawing.Size(90, 90);
             this.btnfinalizar.TabIndex = 17;
-            this.btnfinalizar.Text = "FINALIZAR";
             this.btnfinalizar.UseVisualStyleBackColor = true;
             this.btnfinalizar.Click += new System.EventHandler(this.btnfinalizar_Click);
             // 
@@ -429,6 +435,7 @@
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "OBSERVACIONES";
+            this.groupBox5.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox5_Paint);
             // 
             // txtobservaciones
             // 
@@ -442,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 386);
+            this.ClientSize = new System.Drawing.Size(1003, 420);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnfinalizar);
             this.Controls.Add(this.btncancelar);

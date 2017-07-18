@@ -83,6 +83,16 @@ namespace softchape.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregar {
+            get {
+                object obj = ResourceManager.GetObject("agregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap alerta {
             get {
                 object obj = ResourceManager.GetObject("alerta", resourceCulture);
@@ -133,6 +143,16 @@ namespace softchape.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imprimir {
+            get {
+                object obj = ResourceManager.GetObject("imprimir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap informes {
             get {
                 object obj = ResourceManager.GetObject("informes", resourceCulture);
@@ -156,6 +176,16 @@ namespace softchape.Properties {
         internal static System.Drawing.Bitmap mecanico {
             get {
                 object obj = ResourceManager.GetObject("mecanico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quitar {
+            get {
+                object obj = ResourceManager.GetObject("quitar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

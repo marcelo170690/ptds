@@ -229,5 +229,56 @@ namespace softchape{
         private void txtdescuento_KeyPress(object sender, KeyPressEventArgs e){
             gl.decimales(e);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            Close();
+        }
+
+        private void groupBox1_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox1, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox2_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox2, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox8_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox8, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox3_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox3, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox5_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox5, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox6_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox6, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox4_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox4, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox9_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox9, e.Graphics, Color.Black, Color.Black);
+        }
+
+        private void groupBox7_Paint(object sender, PaintEventArgs e)
+        {
+            gl.DrawGroupBox(groupBox7, e.Graphics, Color.Black, Color.Black);
+        }
     }
 }
